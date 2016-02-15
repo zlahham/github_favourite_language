@@ -1,3 +1,4 @@
+#Favourite Language Checker
 
 This is a command line program that allows you to enter the username of a Github profile, which then returns that users "favourite" programming language.
 
