@@ -23,7 +23,7 @@ bundle
 
 Usage
 -----
-In order to get access to Github's API increased limit of 5000 requests, you must do the following steps:
+Because the Github API only allows 60 requests per hour if the calls are unauthenticated, please follow the below steps to access the increased limit of 5000 requests
 - Go to your Github account settings
 - Select the "Personal access tokens" tab
 - Click on "Generate new token"

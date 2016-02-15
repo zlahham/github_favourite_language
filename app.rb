@@ -37,4 +37,4 @@ lang_count = users_languages.each_with_object(Hash.new(0)) { |word,counts| count
 sorted_langs = lang_count.sort { |a, b| b[1] <=> a[1] }
 
 puts "\n\nThis is #{user_name}'s favourite language!"
-p sorted_langs.first[0]
+puts sorted_langs.first[0]
