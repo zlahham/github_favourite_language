@@ -33,6 +33,10 @@ all_repos_hash.each do |repo|
 end
 
 
-puts "This is #{user_name}'s favourite language!"
-p users_languages
 
+lang_count = user_languages.each_with_object(Hash.new(0)) { |word,counts| counts[word] += 1 }
+sorted_langs = lang_count.sort { |a, b| b[1] <=> a[1] }
+
+
+puts "This is #{user_name}'s favourite language!"
+p sorted_langs.first[0]
